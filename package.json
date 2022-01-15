@@ -15,5 +15,8 @@
     "express-ejs-layouts": "^2.5.1",
     "mongoose": "^6.0.14",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.39"
   }
 }
