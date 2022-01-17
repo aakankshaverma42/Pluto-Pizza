@@ -46,121 +46,27 @@
    <section class="menu container mx-auto py-8">
        <h1 class="text-xl  font-bold ml-8">All Pizzas</h1>
        <div class="grid grid-col-4 col-gap-8">
-       <div class="w=64">
-           <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-           <div class="text-center">
-               <h2 class="mb-4 text-lg">Pepperoni</h2>
-               <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                   <div class="flex items-center justify-around mt-6">
-                       <span class="font-bold text-lg">Rs250</span>
-                       <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                           <span style="background-color: cyan" >+ Add</span>
-                       </button>
-                   </div>
-               </spam>
-           </div>
-        </div>
-        <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
-         <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
-         <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
-         <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
-         <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
-         <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
-         <div class="w=64">
-            <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
-            <div class="text-center">
-                <h2 class="mb-4 text-lg">Pepperoni</h2>
-                <spam class="size py-1 px-4 rounded-full uppercase text-xs">small</spam>
-                    <div class="flex items-center justify-around mt-6">
-                        <span class="font-bold text-lg">Rs250</span>
-                        <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
-                            <span style="background-color: cyan" class="ml-6">+ Add</span>
-                        </button>
-                    </div>
-                </spam>
-            </div>
-         </div>
+        
 
+        <% pizzas.forEach(element => { %>
+            <div class="w=64">
+                <img class="h=40 mb-4 mx-auto" src="Pepperoni.png" alt=""width="300" height="100">
+                <div class="text-center">
+                    <h2 class="mb-4 text-lg"><%= pizza.name %></h2>
+                    <span class="size py-1 px-4 rounded-full uppercase text-xs"><%= pizza.size %></spam>
+                        <div class="flex items-center justify-around mt-6">
+                            <span class="font-bold text-lg">$<%= pizza.price %></span>
+                            <button class="add-to-card py-1 px-6 rounded-full flex items-center font-bold">
+                                <span style="background-color: cyan" >+ Add</span>
+                            </button>
+                        </div>
+                    </span>
+                </div>
+             </div>
+            </div>
+        <% }) %>
        </div>
-
+      
    </section>
    <script src="/model/app.js"></script>
 </body>

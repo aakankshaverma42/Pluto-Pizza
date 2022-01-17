@@ -1,4 +1,4 @@
-const homeController =require("../app/Controllers/homeController")
+const homeController =require("../app/Controllers/homeController")//importing the controllers
 const authController =require("../app/Controllers/authController")
 const cardController = require("../app/Controllers/cardController")
 function initRoutes(app){

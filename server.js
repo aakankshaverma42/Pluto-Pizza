@@ -14,10 +14,8 @@ mongoose.connect('mongodb://localhost:27017/pizza', {
     useUnifiedTopology: true 
 }, err => err ? console.log(err) : console.log('Connected to database'));
 
-//Assert
-app.use(express.static('public '))
-//set template engine
 
+//set template engine
 app.set('views',path.join(__dirname ,'views'))
 app.set('view engine','ejs')
 app.use(express.static('public'));
