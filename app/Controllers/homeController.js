@@ -7,7 +7,7 @@ function homeController(){
         //  console.log(pizzas)
         //  return res.render('home',{pizzas:pizzas })
             Menu.find({}).then(function(pizzas){
-                console.log(pizzas)
+                console.log("homecontroller 10",pizzas)
                 return res.render('home.ejs',{pizzas:pizzas})
            })
             
