@@ -1,16 +1,20 @@
 # Pluto_pizza
-Realtime pizza order tracker app using NodeJs, Express and Mongo DB
+real-time pizza order tracker app using NodeJs, Express and Mongo DB
 
-In this project i build a realtime online pizza order app using Node Js, Express Js and Mongo DB. By using tailwind css for frontend as a css framework and EJS template engine as well and socket.io for realtime communication.
+In this project, I build a real-time online pizza-ordering app using NodeJS, ExpressJS, and MongoDB. By using tailwind CSS for frontend as a CSS framework and EJS template engine as well as socket.io for real-time communication.
 
-Using This app we will be able to order a pizza and get realtime notifications about pizza status. In this Project I cover following topics: 1. Login system
+We can order a pizza using this app and get real-time notifications about pizza status. In this Project, I cover the following topics: 1. Login system
 
-Cookies and sessions - Use Database as session store
+Cookies and sessions - Use the Database as a session store
 Registration
 User roles
 Shopping cart
-Realtime pizza status tracker
-Real time web socket private connections
+real-time pizza status tracker
+Real-time web socket private connections
 Git
 ES6 and SCSS
-Express project unique architecture and many other things.
+Express projects unique architecture and many other things.
+# Pluto-pizza web app is ready.
+![image](https://github.com/aakankshaverma42/Pluto-Pizza/assets/92093809/2472e209-2a47-4ed1-ad95-6cb70fb2fdf7)
+![image](https://github.com/aakankshaverma42/Pluto-Pizza/assets/92093809/094d95a6-2b8f-4f25-8487-859b523b59cc)
+
