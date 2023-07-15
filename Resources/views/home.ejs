@@ -1,0 +1,44 @@
+  
+  <section class="hero py-16">
+       <div class="container mx-auto flex items-center justify-between">
+
+       <div class="w-1/2">
+          <h6 class="text-3xl md:text-6xl font-bold ml-12 "><em>Pluto-Pizza</em></h6>
+          <h1 class="m-2 text-lg ml-12 "><em>One slice of pizza is never enough; it's a love affair that demands seconds</em><br><em>So let your First Bite becomes your </em><em><blockquote >"Forever wala bite !"</blockquote> </em></h1>
+          <h1 class="m-4 text-lg ml-12 "></h1>
+          <button class="px-4 py-2 rounded-full text-white font-bold mt-3 btn-primary">ORDER NOW</button>
+          </div>
+
+         <div class="w-1/2" >
+                <img src="/img/homepizza.png" alt="">
+         </div> 
+
+       </div>
+  </section>
+
+   <section class="menu container mx-auto py-8">
+    <h1 class=" text-mb font-bold mb-10 menus"><em>" YOU BETTER CUT THE PIZZA IN FOUR PIECES BECAUSE I’M NOT HUNGRY ENOUGH TO EAT SIX .SO LET'S DIG INTO DELICIOUS CIRCLE OF UNITY "</em></h1>
+       <!-- <h1 class=" text-xl font-bold textline"><em>ROLL-DOWN</em></h1> -->
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-gap-12 row-gap-16 ">
+        <!-- ejs dynamic fetch from db -->
+        <% pizzas.forEach(function(pizza) { %>
+            <div class="w-full md:w-64 gridblock">
+            <img class="h-40 mb-4 mx-auto" src="/img/<%= pizza.image %>" alt="">
+            <div class="text-center">
+                <h2 class="mb-4 text-lg"><%=pizza.name%></h2>
+                <span class="size py-1 px-4 rounded-full uppercase text-xs"><%=pizza.size %></span>
+                    <div class="flex items-center justify-around mt-6">
+                        <span class=" text-lg price">Rs: <%=pizza.price %></span>
+                        <button data-pizza ="<%= JSON.stringify(pizza)%>" class="add-to-cart py-1 px-4 rounded-full flex items-center font-bold">
+                         <span>+</span>
+                         <span class="ml-2">Add</span>
+                        </button>
+                    </div>
+                </span>
+            </div>
+         </div>
+    <% }) %>
+     </div>
+   </section>
+
+  
