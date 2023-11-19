@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require('express')
 
 const app = express()
-const ejs = require('ejs')
+// const ejs = require('ejs')
 const expressLayout = require('express-ejs-layouts')
 const path = require('path')
 
@@ -16,6 +16,7 @@ const  flash = require('express-flash')
 const MongoStore = require('connect-mongo'); //it is used to store the session in db
 const passport = require('passport');
 const Emitter = require('events')
+
 
 // Database connection
 mongoose.set('strictQuery', false);
@@ -70,6 +71,10 @@ app.set('views',path.join(__dirname ,'/Resources/views'))
 app.set('view engine','ejs')
 
 require('./routes/web')(app)
+//for 404 handling 
+app.use((req,res) => {
+ res.status(404).render('errors/404.ejs')
+})
 
  const server = app.listen(PORT,()=> {
     console.log(`Listening to port ${PORT}`)

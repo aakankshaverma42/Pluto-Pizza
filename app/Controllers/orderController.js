@@ -1,5 +1,6 @@
 const Order = require('../models/order')
 const moment  = require('moment')
+const mongoose = require('mongoose');
 
 function orderController() {
     return {
@@ -56,8 +57,37 @@ function orderController() {
             return res.render('customers/singleOrder', { order })
          }
          return res.redirect('/')
-         }
+         },
+
+    // show function
+    async show(req, res) {
+      try {
+        const orderId = req.params.id;
+
+        // Validate and convert orderId to ObjectId
+        if (!mongoose.Types.ObjectId.isValid(orderId)) {
+          req.flash('error', 'Invalid Order ID');
+          return res.redirect('/customers/orders');
         }
+
+        const objectId = mongoose.Types.ObjectId(orderId);
+
+        // Use the converted objectId in the query
+        const order = await Order.findById(objectId);
+
+        // Authorize user
+        if (req.user._id.toString() === order.customerId.toString()) {
+          return res.render('customers/singleOrder', { order });
+        }
+
+        return res.redirect('/');
+      } catch (error) {
+        console.error(error);
+        req.flash('error', 'Something went wrong');
+        return res.redirect('/customers/orders');
+      }
     }
+  };
+}
 
 module.exports = orderController
